@@ -87,29 +87,32 @@
             <span class="small-or">or</span>
             Signup
           </div>
-          <form >
-              <div id="enter-no">
-            <div>+91 |</div>
-            <input type="text" id="num" placeholder="Mobile Number" />
-        </div>
+          <form>
+            <div id="enter-no">
+              <div>+91 |</div>
+              <input type="text" id="num" placeholder="Mobile Number" />
+            </div>
             <input type="password" id="pass" placeholder="Enter Password" />
+
+            <p>
+              By continuing, I agree to the<span class="terms">
+                Terms of Use </span
+              >&<span class="privacy"> Privacy Policy</span>
+            </p>
+
+            <input type="submit" value="CONTINUE" class="continue" />
+
+            <p id="trouble">
+                Having trouble logging in ? <span class="terms"> Get help </span>
+              </p>
+
+            <input type="button" value="CREATE NEW ACCOUNT" id="newacc"> 
           </form>
-          <p>
-            By continuing, I agree to the<span class="terms">
-              Terms of Use </span
-            >&<span class="privacy"> Privacy Policy</span>
-          </p>
 
-          <div class="continue" onclick="validate()">CONTINUE</div>
-
-          <p id="trouble">
-            Having trouble logging in ? <span class="terms">
-            Get help </span >
-          </p>
+          
         </div>
-
-        
       </div>
     </div>
   </body>
 </html>
+<script src="../script/login.js"></script>
