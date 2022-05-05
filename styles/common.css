@@ -1,16 +1,22 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 0%;
+  margin: 0px;
+  /* padding: 0px; */
 }
 
 .navbar {
   /* border: 2px solid red; */
+  /* position: fixed; */
+  /* z-index: 12; */
+  margin: auto;
+  /* margin-top: -40px; */
   height: 60px;
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -54,10 +60,19 @@ li > a {
   color: black;
 }
 
+.profile-login{
+  text-decoration: none;
+  color: black;
+}
+
 sup {
   color: tomato;
   font-weight: bold;
   font-size: 10px;
+}
+
+.studio{
+  margin-top: 3px;
 }
 
 .search-bar {
@@ -96,7 +111,7 @@ span + div {
 .banner {
   width: 100%;
   /* display: flex; */
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .banner > img {
@@ -131,201 +146,244 @@ span + div {
   width: 135px;
 }
 
-.titles{
-    margin-top: 60px;
-    margin-left: 50px;
-    text-transform: uppercase;
-    font-size: 22px;
-    letter-spacing: 3px;
-    font-weight: 500;
-    margin-bottom: 60px;
+.titles {
+  margin-top: 60px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 60px;
 }
 
-.bestof > div{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8,auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 3px;
-    justify-content: space-around;
+.bestof > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 3px;
+  justify-content: space-around;
 }
 
-.bestof > div >img{
-    width: 155px;
-    height: 220px;
+.bestof > div > img {
+  width: 155px;
+  height: 220px;
 }
 
-.toppicks > div{
-    display: flex;
-    justify-content: space-between;
+.toppicks > div {
+  display: flex;
+  justify-content: space-between;
 }
 
 .toppicks > div > img {
-    height: 220px;
-    width: 180px;
-  }
-
-  .cat-to-bag > div{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8,auto);
-    grid-template-rows: repeat(3, auto);
-    justify-content: center;
+  height: 220px;
+  width: 180px;
 }
 
-.cat-to-bag > div >img{
-    width: 168px;
-    height: 200px;
+.cat-to-bag > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
 }
 
-
-
-.deals-top-brands > div{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8,auto);
-    grid-template-rows: repeat(3, auto);
-    justify-content: space-evenly;
+.cat-to-bag > div > img {
+  width: 168px;
+  height: 200px;
 }
 
-.deals-top-brands > div >img{
-    width: 155px;
-    height: 250px;
+.deals-top-brands > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: space-evenly;
 }
 
-
-.myntra-luxe > div{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(8,auto);
-    grid-template-rows: repeat(2, auto);
-    justify-content: center;
+.deals-top-brands > div > img {
+  width: 155px;
+  height: 250px;
 }
 
-.myntra-luxe > div >img{
-    width: 168px;
-    height: 230px;
+.myntra-luxe > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+}
+
+.myntra-luxe > div > img {
+  width: 168px;
+  height: 230px;
 }
 
 .giftcards > div {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .giftcards > div > img {
-    height: 240px;
-    width: 269px;
-  }
-
-  .foot{
-      background-color: #eee;
-  }
-
-  .footer {
-    /* background-color: #24262b; */
-    padding: 70px 0;
-    margin: auto;
-    width: 80%;
-    background-color: #eee;
-    /* border: 1px solid black; */
-  }
-  .footer-col {
-    width: 25%;
-    padding: 0 15px;
-    /* border: 1px solid black; */
-  }
-
-  .footer-col:first-child > h4, .footer-col:nth-child(2) > h4{
-        margin-left: 35px;
-  }
-  .footer-col > h4 + div{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-  } 
-
-  .footer-col > h4 + div > a > img{
-      width: 100px;
-  }
-  .footer-col h4 {
-    font-size: 16px;
-    /* color: #ffffff; */
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    font-weight: 600;
-    position: relative;
-  }
-  
-  .footer-col ul li:not(:last-child) {
-    margin-bottom: 5px;
-  }
-  .footer-col ul li a {
-    font-size: 14px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #777777;
-    display: block;
-  }
-  .footer-col ul li a:hover {
-    color: #000000;
-    cursor: pointer;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
-.social-links{
-    width: fit-content;
-    display: flex;
-    justify-content: start;
+.giftcards > div > img {
+  height: 240px;
+  width: 269px;
 }
-  .footer-col .social-links a {
-    height: 20px;
-    width: 20px;
-    background-color: rgba(134, 134, 134, 0.2);
-    text-align: center;
-    line-height: 20px;
-    border-radius: 2px;
-    color: #24262b;
-  }
-  .footer-col .social-links a:hover {
-    color: #ffffff;
-    background-color: #000000;
-  }
-  
-  .footer img {
-    width: 60%;
-    margin-bottom: 20px;
-  }
-  
-  .footer-promise {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  
-  .footer-promise img {
-    width: 25%;
-    height: 25%;
-    margin-right: 15px;
-  }
-  
 
-  .container {
-    max-width: 100%;
-    margin: auto;
-    font-family: "Poppins", sans-serif;
-  }
+.foot {
+  background-color: #eee;
+}
 
-  .row {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-  }
-  ul {
-    list-style: none;
-  }
+.footer {
+  /* background-color: #24262b; */
+  padding: 70px 0;
+  margin: auto;
+  width: 80%;
+  background-color: #eee;
+  /* border: 1px solid black; */
+}
+.columns {
+  width: 25%;
+  padding: 0 15px;
+  /* border: 1px solid black; */
+}
 
-  .footer-col:last-child{
-      margin-top: 60px;
+.columns:first-child > h4,
+.columns:nth-child(2) > h4 {
+  margin-left: 35px;
+}
+.columns > h4 + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.columns > h4 + div > a > img {
+  width: 100px;
+}
+.columns h4 {
+  font-size: 16px;
+  /* color: #ffffff; */
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.columns ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.columns ul li a {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #777777;
+  display: block;
+}
+.columns ul li a:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.facebook {
+  width: fit-content;
+  display: flex;
+  justify-content: start;
+}
+.columns .facebook a {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(134, 134, 134, 0.2);
+  text-align: center;
+  line-height: 20px;
+  border-radius: 2px;
+  color: #24262b;
+}
+.columns .facebook a:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.footer img {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.original {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.original img {
+  width: 25%;
+  height: 25%;
+  margin-right: 15px;
+}
+
+.original > div > p {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+
+.columns:last-child {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+.mainmenubtn {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding:20px;
+  margin-top:20px;
+}
+.mainmenubtn:hover {
+  background-color: blue;
   }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-child {
+  display: none;
+  background-color: skyblue;
+  min-width: 200px;
+}
+.dropdown-child a {
+  color: blue;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-child {
+  display: block;
+} */
