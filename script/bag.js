@@ -1,15 +1,24 @@
 var cartData = JSON.parse(localStorage.getItem("cart"));
+// var amount = JSON.parse(localStorage.getItem("total"));
+// console.log(amount);
 
 var total = cartData.reduce(function (sum, elem, index, arr){
     return sum + elem.price;
   },0)
 
-  console.log(total);
+  localStorage.setItem("totalamount", JSON.stringify(total));
+
+  var h1 = document.createElement("h1");
+  h1.innerText = "Your total amount = " + total + " Rs";
+  document.querySelector(".showtotal").append(h1);
 
 //   var length = cartData.length;
 
     // document.querySelector(".showprice").innerText = `you have ${length} items and total is rs ${total}`;
-
+    let loggedData = JSON.parse(localStorage.getItem("loggedData")) || null;
+    if(!loggedData){
+      window.location.href = "login.html";
+    }else{
 
   cartData.map(function (elem,index) {
     var card = document.createElement("div");
@@ -73,5 +82,5 @@ var total = cartData.reduce(function (sum, elem, index, arr){
  function checkOut(){
   window.location.href = "../html/payment.html";
  }
-
+}
 
