@@ -27,9 +27,3 @@
     }
 
 
-// document.querySelector(".continue").addEventListener("click", newFun);
-
-// function newFun (){
-//     event.preventDefault();
-//     window.location.href = "../html/login.html";
-// }
