@@ -1,4 +1,5 @@
-var amount = JSON.parse(localStorage.getItem("amountPayable")) || 0;
+var amount = JSON.parse(localStorage.getItem("totalamount"));
+console.log(amount)
 
 document.querySelector("h2").innerText = `Total Amount is Rs ${amount}`;
 

@@ -369,6 +369,7 @@ var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
    function addToCart(elem){
     cartData.push(elem);
+    alert("Added to Bag");
     localStorage.setItem("cart", JSON.stringify(cartData))
   }
 

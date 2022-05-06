@@ -27,3 +27,14 @@
     background-color: #fd295a;
     cursor: pointer;
 }
+
+.showtotal{
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: max-content;
+    padding: 10px;
+    color: #fd295a;
+    border: 1px solid #fd295a;
+    border-radius: 10px;
+}
