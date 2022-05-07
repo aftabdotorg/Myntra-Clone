@@ -1,6 +1,6 @@
 
     var form = document.querySelector("form").addEventListener("submit", signupFun);
-
+    var arr = JSON.parse(localStorage.getItem("userCred")) || [];
     function signupFun(){
         event.preventDefault();
 
@@ -12,7 +12,7 @@
             altnum : document.querySelector("#num2").value,
         };
 
-        var arr = [];
+
         arr.push(userObj)
         localStorage.setItem("userCred", JSON.stringify(arr));
         alert("Sign Up Successfull!")

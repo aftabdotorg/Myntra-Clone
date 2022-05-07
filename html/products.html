@@ -42,7 +42,7 @@
         <div class="category">
           <ul>
             <li class="men"><a href="../html/mens.html">men</a></li>
-            <li class="women"><a href="">women</a></li>
+            <li class="women"><a href="../html/women.html">women</a></li>
             <li class="kids"><a href="../html/product2.html">kids</a></li>
             <li class="hnl"><a href="">home & living</a></li>
             <li class="beauty"><a href="">beauty</a></li>
@@ -85,7 +85,7 @@
       </div>
       <div class="right">
         <div class="sort">
-          <select name="type" id="type">
+          <select name="type" id="type" onchange="handleSort()">
             <option selected>Sort By: Recommended</option>
             <option value="1">Price : High to Low</option>
             <option value="2">Price : Low to High</option>
@@ -106,42 +106,36 @@
                 type="checkbox"
                 id="adidas"
                 value="adidas"
-                onclick="filter('ADIDAS')"
               />
               <label for="adidas">Adidas</label><br />
               <input
                 type="checkbox"
                 id="puma"
                 value="puma"
-                onclick="filter('Puma')"
               />
               <label for="puma">Puma</label><br />
               <input
                 type="checkbox"
                 id="HRX"
                 value="HRX"
-                onclick="filter('HRX')"
               />
               <label for="HRX">HRX</label><br />
               <input
                 type="checkbox"
                 id="wrogn"
                 value="wrogn"
-                onclick="filter('WROGN')"
               />
               <label for="wrogn">Wrogn</label><br />
               <input
                 type="checkbox"
                 id="levis"
                 value="levis"
-                onclick="filter('Levis')"
               />
               <label for="levis">Levis</label><br />
               <input
                 type="checkbox"
                 id="tommy"
                 value="tommy"
-                onclick="filter('Tommy Hilfiger')"
               />
               <label for="tommy">Tommy Hilfiger</label><br />
             </div>
@@ -152,7 +146,6 @@
                 type="checkbox"
                 id="500"
                 value="500"
-                onclick="priceFilter(500, 0)"
               />
               <label for="500">Below 500</label><br />
 
@@ -160,28 +153,24 @@
                 type="checkbox"
                 id="1000"
                 value="1000"
-                onclick="priceFilter(1000, 500)"
               />
               <label for="1000">Rs.500 to Rs.1000</label><br />
               <input
                 type="checkbox"
                 id="1500"
                 value="1500"
-                onclick="priceFilter(1500, 1000)"
               />
               <label for="1500">Rs.1000 to Rs.1500</label><br />
               <input
                 type="checkbox"
                 id="2000"
                 value="2000"
-                onclick="priceFilter(2000, 1500)"
               />
               <label for="2000">Rs.1500 to Rs.2000</label><br />
               <input
                 type="checkbox"
                 id="2000+"
                 value="2000+"
-                onclick="priceFilter(10000, 2000)"
               />
               <label for="2000+">Above Rs.2000</label><br />
             </div>

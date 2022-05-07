@@ -319,7 +319,36 @@ var productData = [
 ];
 
 var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+displayData(productData);
+function handleSort() {
+  var selected = document.querySelector("#type").value;
 
+  if (selected == "1") {
+    productData.sort(function (a, b) {
+      return b.price - a.price;
+    });
+    displayData(productData);
+  }
+
+  if (selected == "2") {
+    productData.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    displayData(productData);
+  }
+
+  if(selected == "3"){
+    productData.sort(function (a,b){
+      return b.discount - a.discount;
+    });
+    displayData(productData);
+  }
+}
+
+
+
+  function displayData(productData) {
+    document.querySelector(".products").innerHTML = "";
    productData.forEach(function (elem){
        var card = document.createElement("div");
        card.setAttribute("class","product-card")
@@ -365,6 +394,8 @@ var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
 
    });
+
+  }
 
 
    function addToCart(elem){

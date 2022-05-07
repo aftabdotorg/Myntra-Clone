@@ -11,8 +11,11 @@ body {
   /* z-index: 12; */
   margin: auto;
   /* margin-top: -40px; */
+  position: fixed;
+  top: 0;
   height: 60px;
   width: 100%;
+  /* margin-bottom: 50px; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -56,6 +59,10 @@ ul > li:last-child {
 }
 
 li > a {
+  text-decoration: none;
+  color: black;
+}
+div > a {
   text-decoration: none;
   color: black;
 }
@@ -111,7 +118,7 @@ span + div {
 .banner {
   width: 100%;
   /* display: flex; */
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .banner > img {

@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra
+      Women Shopping Online - Buy from Latest Collections of Shirts and Accesories
     </title>
-    <link rel="stylesheet" href="../styles/common.css" />
-
-    <!-- myntra-logo-title-bar -->
     <link
       rel="icon"
       href="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png"
       type="image/x-icon"
     />
+
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/product.css" />
 
     <!-- fontawesome-link -->
     <script
@@ -62,7 +62,9 @@
         <div class="profile-wishlist-bag">
           <div>
             <span class="material-symbols-outlined"> person </span>
-            <div><a href="../html/login.html" class="profile-login">Login</a></div>
+            <div>
+              <a href="../html/login.html" class="profile-login">Login</a>
+            </div>
           </div>
           <div>
             <span class="material-symbols-outlined"> favorite </span>
@@ -75,12 +77,109 @@
         </div>
       </div>
 
+      <div class="path">
+        Home / Clothing / <strong>For Women</strong>
+      </div>
+      <div class="path1">
+        <strong>Shirts Women</strong> - 4000 items
+      </div>
+      <div class="right">
+        <div class="sort">
+          <select name="type" id="type" onchange="handleSort()">
+            <option selected>Sort By: Recommended</option>
+            <option value="1">Price : High to Low</option>
+            <option value="2">Price : Low to High</option>
+            <option value="3">Best Discount</option>
+            <option value="4">Popularity</option>
+          </select>
+        </div>
+        <!-- <div id="products-right"></div> -->
+      </div>
+      <div class="big-flex">
+        <div class="filters">
+          <div class="leftheading">FILTERS</div>
+          <div class="filter-content">
+            <div class="filter-categories">
+              <p>Brands</p>
 
+              <input
+                type="checkbox"
+                id="adidas"
+                value="adidas"
+              />
+              <label for="adidas">Adidas</label><br />
+              <input
+                type="checkbox"
+                id="puma"
+                value="puma"
+              />
+              <label for="puma">Puma</label><br />
+              <input
+                type="checkbox"
+                id="HRX"
+                value="HRX"
+              />
+              <label for="HRX">HRX</label><br />
+              <input
+                type="checkbox"
+                id="wrogn"
+                value="wrogn"
+              />
+              <label for="wrogn">Wrogn</label><br />
+              <input
+                type="checkbox"
+                id="levis"
+                value="levis"
+              />
+              <label for="levis">Levis</label><br />
+              <input
+                type="checkbox"
+                id="tommy"
+                value="tommy"
+              />
+              <label for="tommy">Tommy Hilfiger</label><br />
+            </div>
 
+            <div class="filter-categories">
+              <p>Price</p>
+              <input
+                type="checkbox"
+                id="500"
+                value="500"
+              />
+              <label for="500">Below 500</label><br />
 
+              <input
+                type="checkbox"
+                id="1000"
+                value="1000"
+              />
+              <label for="1000">Rs.500 to Rs.1000</label><br />
+              <input
+                type="checkbox"
+                id="1500"
+                value="1500"
+              />
+              <label for="1500">Rs.1000 to Rs.1500</label><br />
+              <input
+                type="checkbox"
+                id="2000"
+                value="2000"
+              />
+              <label for="2000">Rs.1500 to Rs.2000</label><br />
+              <input
+                type="checkbox"
+                id="2000+"
+                value="2000+"
+              />
+              <label for="2000+">Above Rs.2000</label><br />
+            </div>
+          </div>
+        </div>
 
-
-      <div class="foot">   
+        <div class="products"></div>
+      </div>
+      <div class="foot">
         <footer class="footer">
           <div class="container">
             <div class="row">
@@ -115,21 +214,21 @@
                   <li><a href="#">Cancellation</a></li>
                 </ul>
               </div>
-  
+
               <div class="columns">
                 <h4>experience myntra app on mobile</h4>
                 <div>
-                <a href=""
-                  ><img
-                    src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
-                    alt=""
-                /></a>
-                <a href=""
-                  ><img
-                    src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
-                    alt=""
-                /></a>
-              </div>
+                  <a href=""
+                    ><img
+                      src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                      alt=""
+                  /></a>
+                </div>
                 <h4>keep in touch</h4>
                 <div class="facebook">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -138,7 +237,7 @@
                   <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
               </div>
-  
+
               <div class="columns">
                 <div class="original">
                   <img
@@ -147,11 +246,11 @@
                   />
                   <div>
                     <p>100% ORIGINAL</p>
-  
+
                     <span>guarantee for all products at myntra.com</span>
                   </div>
                 </div>
-  
+
                 <div class="original">
                   <img
                     src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
@@ -167,6 +266,8 @@
           </div>
         </footer>
       </div>
-      </div>
-    </body>
-  </html>
+    </div>
+  </body>
+</html>
+
+<script src="../script/women.js"></script>
