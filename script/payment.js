@@ -60,10 +60,8 @@ function formSubmit(){
     function otpCall(){
         event.preventDefault()
         var otp = document.querySelector("#otpForm").value
-        var c = localStorage.getItem("counter") || 0;
         if(otp == "1234"){
             alert("Payment Sucessful!")
-            localStorage.setItem("counter",0)
             window.location.href="../index.html"
         }
     }

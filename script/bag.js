@@ -1,4 +1,4 @@
-var cartData = JSON.parse(localStorage.getItem("cart"));
+var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 // var amount = JSON.parse(localStorage.getItem("total"));
 // console.log(amount);
 
@@ -80,7 +80,7 @@ var total = cartData.reduce(function (sum, elem, index, arr){
   var pro = document.querySelector("#proceed").addEventListener("click", checkOut)
 
  function checkOut(){
-  window.location.href = "../html/payment.html";
+  window.location.href = "../html/address.html";
  }
 }
 

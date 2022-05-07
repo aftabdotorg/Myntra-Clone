@@ -294,7 +294,35 @@ var mensData = [
 ];
 
 var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+displayData(mensData);
+function handleSort() {
+  var selected = document.querySelector("#type").value;
 
+  if (selected == "1") {
+    mensData.sort(function (a, b) {
+      return b.price - a.price;
+    });
+    displayData(mensData);
+  }
+
+  if (selected == "2") {
+    mensData.sort(function (a, b) {
+      return a.price - b.price;
+    });
+    displayData(mensData);
+  }
+
+  if(selected == "3"){
+    mensData.sort(function (a,b){
+      return b.discount - a.discount;
+    });
+    displayData(mensData);
+  }
+}
+
+  function displayData(mensData) {
+
+    document.querySelector(".products").innerHTML = "";
     mensData.forEach(function (elem){
         var card = document.createElement("div");
         card.setAttribute("class","product-card")
@@ -338,7 +366,7 @@ var cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
         document.querySelector(".products").append(card);
     });
-
+  }
     function addToCart(elem){
       cartData.push(elem);
       // var btn = document.querySelector(".btn");
