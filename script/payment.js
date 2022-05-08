@@ -12,7 +12,7 @@ function formSubmit(){
     var userNum = document.querySelector("#cardNumber").value;
     var date = document.querySelector("#date").value;
     var cvv = document.querySelector("#cvv").value;
-    // console.log(date,typeof date)
+    
     var c =0
 
     if(userNum == 1234567890123456 && cvv == "123"){
@@ -67,3 +67,30 @@ function formSubmit(){
     }
   
 }
+
+// var userData = JSON.parse(localStorage.getItem("cartData"));
+// var payData = {
+//     card: 1234567890, cvv : 123,
+// };
+//     localStorage.setItem("payD", JSON.stringify(payData));
+//     console.log(payData)
+// document.querySelector("#form").addEventListener("submit", formSubmit);
+
+// function formSubmit(){
+//     event.preventDefault();
+
+//     var data = {
+//     userName : document.querySelector("#cardName").value,
+//     userNum : document.querySelector("#cardNumber").value,
+//     date : document.querySelector("#date").value,
+//     cvv : document.querySelector("#cvv").value,
+//     }
+
+//     localStorage.setItem("cartData", JSON.stringify(data))
+
+//     if(payData.card == data.userNum && payData.cvv == data.cvv){
+//         alert("payment successfull")
+//     }else{
+//         alert("invalid")
+//     }
+// }
